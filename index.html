@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rэd Fitness &amp; Wellness — фитнес-клуб в Казани</title>
+  <meta name="description" content="Демо-макет сайта фитнес-клуба Rэd Fitness & Wellness: тренажёрный зал, групповые и персональные тренировки, спа и кофейня. Казань, проспект Ильгама Шакирова, 2.">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%23e2233a"/><text x="32" y="45" font-family="Arial,sans-serif" font-size="34" font-weight="bold" fill="%23fff" text-anchor="middle">R</text></svg>'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">Rэd Fitness<small>&amp; wellness</small></a>
+      <nav class="header__nav" aria-label="Основная навигация">
+        <a class="header__link" href="#" data-demo>Вход</a>
+        <a class="header__link" href="#about">О клубе</a>
+        <button class="header__menu-btn" id="menuOpen" type="button">Меню</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Полноэкранное меню -->
+  <div class="menu" id="menu">
+    <div class="menu__inner">
+      <div class="menu__top">
+        <span class="logo">Rэd Fitness<small>&amp; wellness</small></span>
+        <button class="menu__close" id="menuClose" type="button">Закрыть ✕</button>
+      </div>
+      <nav class="menu__nav" aria-label="Меню">
+        <a href="#about"><i>01</i>О клубе</a>
+        <a href="#directions"><i>02</i>Направления</a>
+        <a href="#team"><i>03</i>Команда</a>
+        <a href="#reviews"><i>04</i>Отзывы</a>
+        <a href="#pricing"><i>05</i>Абонементы</a>
+        <a href="#contacts"><i>06</i>Контакты</a>
+      </nav>
+      <div class="menu__footer">
+        <a href="tel:+79520450908">+7 952 045 09 08</a>
+        <p>Казань, проспект Ильгама Шакирова, 2</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- Герой -->
+    <section class="hero">
+      <span class="hero__ghost" aria-hidden="true">Fitness</span>
+      <img class="hero__athlete" id="heroAthlete" src="img/hero-athlete.jpg" alt="Атлет тренируется с канатами в тёмном зале">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Фитнес · Wellness · Кофейня — Казань</p>
+        <h1 class="hero__title">Стань&nbsp;сильнее</h1>
+        <p class="hero__lead">Тренируйся, восстанавливайся, живи ярче — в камерном клубе без толкучки</p>
+        <div class="hero__actions">
+          <a class="btn" href="#pricing">Начать тренироваться</a>
+          <a class="btn btn--ghost" href="#contacts">Записаться на экскурсию</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Цифры -->
+    <section class="stats">
+      <div class="container stats__inner">
+        <div class="stat reveal"><b>5<em>.0</em></b><span>рейтинг на Яндекс&nbsp;Картах</span></div>
+        <div class="stat reveal" data-delay="1"><b>38</b><span>отзывов гостей</span></div>
+        <div class="stat reveal" data-delay="2"><b>3</b><span>формата: фитнес, wellness, кофейня</span></div>
+        <div class="stat reveal" data-delay="3"><b>7<em>/7</em></b><span>дней в неделю</span></div>
+      </div>
+    </section>
+
+    <!-- О клубе: железный зал -->
+    <section class="section-p about" id="about">
+      <div class="container about__inner">
+        <div class="about__text">
+          <h2 class="h2 reveal"><span class="red">Железный</span> зал</h2>
+          <p class="lead reveal" data-delay="1">Камерный клуб, где сила растёт без компромиссов</p>
+          <p class="reveal" data-delay="2">Качественные тренажёры, зона свободных весов и кардио — всё под рукой и без очередей. Клуб небольшой, поэтому здесь спокойно и по-домашнему: никакой толкучки, только ты, железо и результат.</p>
+          <a class="btn reveal" data-delay="3" href="#contacts">Записаться на экскурсию</a>
+        </div>
+        <div class="about__media reveal" data-delay="1">
+          <img class="about__img-big" src="img/gym-hall.jpg" alt="Тренажёрный зал Rэd Fitness — реальное фото клуба">
+          <img class="about__img-small" src="img/gym-detail.jpg" alt="Атлет в тёмном зале клуба">
+        </div>
+      </div>
+    </section>
+
+    <!-- Групповые и персональные тренировки -->
+    <section class="banner" id="training">
+      <div class="banner__inner">
+        <div class="banner__media reveal">
+          <img src="img/group-class.jpg" alt="Групповая тренировка в зале">
+        </div>
+        <div class="banner__text">
+          <h2 class="h2 reveal"><span class="red">Держи тело в форме</span><br>и сильным</h2>
+          <p class="reveal" data-delay="1">Групповые и персональные тренировки под любую цель: сила, выносливость, гибкость и восстановление. Тренер видит малейшие нюансы техники и бережно ведёт к результату — даже если ты впервые в зале.</p>
+          <ul class="chips reveal" data-delay="2">
+            <li>Силовой тренинг</li>
+            <li>HIIT</li>
+            <li>Стретчинг</li>
+            <li>Йога</li>
+            <li>Персональные программы</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wellness: восстановление -->
+    <section class="section-p potential" id="wellness">
+      <div class="container potential__inner">
+        <div class="potential__text">
+          <h2 class="h2 reveal"><span class="red">Раскрой свой</span><br>потенциал</h2>
+          <p class="reveal" data-delay="1">Настоящий результат рождается из баланса нагрузки и восстановления. Массаж спины с горячими камнями и оздоровительные спа-процедуры — каждая из них как перезагрузка для организма. А после — ароматный кофе из нашей кофейни.</p>
+          <a class="btn reveal" data-delay="2" href="#contacts">Записаться на процедуру</a>
+        </div>
+        <div class="potential__media reveal" data-delay="1">
+          <img class="p1" src="img/spa.jpg" alt="Массаж с горячими камнями">
+          <img class="p2" src="img/kettlebells.jpg" alt="Хват штанги крупным планом">
+          <img class="p3" src="img/coffee.jpg" alt="Кофейня в клубе">
+        </div>
+      </div>
+    </section>
+
+    <!-- Направления -->
+    <section class="section-p directions" id="directions">
+      <div class="container">
+        <h2 class="h2 reveal"><span class="red">Направления</span> клуба</h2>
+        <div class="directions__grid">
+          <article class="service reveal">
+            <i>01</i>
+            <h3>Тренажёрный зал</h3>
+            <p>Кардиозона, свободные веса и современное оборудование для силового тренинга — без толкучки и очередей.</p>
+          </article>
+          <article class="service reveal" data-delay="1">
+            <i>02</i>
+            <h3>Групповые тренировки</h3>
+            <p>HIIT, функциональный тренинг, сайкл, стретчинг и йога — занятия в камерных группах.</p>
+          </article>
+          <article class="service reveal" data-delay="2">
+            <i>03</i>
+            <h3>Персональный тренинг</h3>
+            <p>Программа под твою цель: контроль техники, план питания и замеры прогресса.</p>
+          </article>
+          <article class="service reveal">
+            <i>04</i>
+            <h3>Спа и массаж</h3>
+            <p>Массаж спины с горячими камнями и восстановительные процедуры у специалистов с большим стажем.</p>
+          </article>
+          <article class="service reveal" data-delay="1">
+            <i>05</i>
+            <h3>Оздоровительные программы</h3>
+            <p>Оздоровительный центр: мягкие методики с учётом твоих индивидуальных особенностей и пожеланий.</p>
+          </article>
+          <article class="service reveal" data-delay="2">
+            <i>06</i>
+            <h3>Кофейня</h3>
+            <p>Эспрессо перед тренировкой и восстанавливающий напиток после — кофейня прямо в клубе.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Команда -->
+    <section class="section-p team" id="team">
+      <div class="container">
+        <h2 class="h2 reveal"><span class="red">Команда</span> Rэd</h2>
+        <p class="lead reveal" data-delay="1">Профессионалы, к которым возвращаются</p>
+        <div class="team__grid">
+          <article class="person reveal">
+            <div class="person__photo"><img src="img/trainer-1.jpg" alt="Тренер Асия Туторская"></div>
+            <div class="person__body">
+              <p class="person__role">Тренер</p>
+              <h3>Асия Туторская</h3>
+              <p>Видит малейшие нюансы техники и ведёт к результату очень бережно. Фитнес, стретчинг, восстановление формы.</p>
+            </div>
+          </article>
+          <article class="person reveal" data-delay="1">
+            <div class="person__photo"><img src="img/trainer-2.jpg" alt="Массажист Евгений"></div>
+            <div class="person__body">
+              <p class="person__role">Массажист</p>
+              <h3>Евгений</h3>
+              <p>Массаж спины с горячими камнями: отлично снимает напряжение с зажатых мышц и расслабляет.</p>
+            </div>
+          </article>
+          <article class="person reveal" data-delay="2">
+            <div class="person__photo"><img src="img/trainer-3.jpg" alt="Спа-специалист Лилия"></div>
+            <div class="person__body">
+              <p class="person__role">Спа-специалист</p>
+              <h3>Лилия</h3>
+              <p>Оздоровительные и спа-процедуры с учётом твоих индивидуальных особенностей и пожеланий.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="section-p reviews" id="reviews">
+      <div class="container">
+        <div class="reviews__head">
+          <div class="reviews__score reveal">5.0</div>
+          <div class="reveal" data-delay="1">
+            <p class="stars">★★★★★</p>
+            <p class="reviews__src">Реальные отзывы гостей — <a href="https://yandex.ru/maps/org/130258485023" target="_blank" rel="noopener">Яндекс Карты</a></p>
+          </div>
+        </div>
+        <div class="reviews__grid">
+          <article class="review reveal">
+            <p>Чисто и красиво, качественные тренажёры и принадлежности, приятный и дружелюбный персонал.</p>
+            <div class="review__footer">
+              <span class="review__avatar">БА</span>
+              <div class="review__meta"><b>Булат Ахтямов</b><small>1 сентября · Яндекс Карты</small></div>
+            </div>
+          </article>
+          <article class="review reveal" data-delay="1">
+            <p>Клуб небольшой, но этим и прекрасен — нет толкучки, всё дышит спокойствием. А главная находка — тренер Асия: профессионализм чувствуется в каждом слове, за два с половиной месяца подтянула форму.</p>
+            <div class="review__footer">
+              <span class="review__avatar">ЮС</span>
+              <div class="review__meta"><b>Юлия С.</b><small>2 августа · Яндекс Карты</small></div>
+            </div>
+          </article>
+          <article class="review reveal" data-delay="2">
+            <p>Была на оздоровительных и спа-процедурах у нескольких специалистов — все профессионалы с большим стажем. Массаж спины с горячими камнями отлично снимает напряжение. Каждая процедура — как перезагрузка для организма.</p>
+            <div class="review__footer">
+              <span class="review__avatar"><img src="img/av-gulnara.jpg" alt="Аватар Гульнары"></span>
+              <div class="review__meta"><b>Гульнара Б.</b><small>25 августа · Яндекс Карты</small></div>
+            </div>
+          </article>
+          <article class="review reveal" data-delay="3">
+            <p>Хожу в центр больше полугода — тело стало значительно сильнее и выносливее. Большой выбор направлений, у каждого тренера индивидуальный подход. Стоимость абонемента оправдана на 100%.</p>
+            <div class="review__footer">
+              <span class="review__avatar"><img src="img/av-darya.jpg" alt="Аватар Дарьи"></span>
+              <div class="review__meta"><b>Дарья Крахмалева</b><small>1 августа · Яндекс Карты</small></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Абонементы -->
+    <section class="section-p pricing" id="pricing">
+      <div class="container">
+        <h2 class="h2 reveal"><span class="red">Абонементы</span> и цены</h2>
+        <div class="pricing__grid">
+          <article class="plan reveal">
+            <h3>Разовое</h3>
+            <p class="plan__price">600 <small>₽</small></p>
+            <p class="plan__per">одно посещение</p>
+            <ul>
+              <li>Все зоны клуба</li>
+              <li>Без обязательств</li>
+              <li>Кофе в подарок</li>
+            </ul>
+            <a class="btn btn--ghost" href="#contacts">Оформить</a>
+          </article>
+          <article class="plan reveal" data-delay="1">
+            <h3>Месяц</h3>
+            <p class="plan__price">3 500 <small>₽</small></p>
+            <p class="plan__per">безлимит на 30 дней</p>
+            <ul>
+              <li>Безлимит тренировок</li>
+              <li>Групповые занятия</li>
+              <li>Замер прогресса</li>
+            </ul>
+            <a class="btn btn--ghost" href="#contacts">Оформить</a>
+          </article>
+          <article class="plan plan--hit reveal" data-delay="2">
+            <span class="plan__badge">Хит</span>
+            <h3>3 месяца</h3>
+            <p class="plan__price">9 000 <small>₽</small></p>
+            <p class="plan__per">безлимит на 90 дней</p>
+            <ul>
+              <li>Всё из тарифа «Месяц»</li>
+              <li>Входной персональный тренинг</li>
+              <li>Скидка на спа-процедуры</li>
+            </ul>
+            <a class="btn" href="#contacts">Оформить</a>
+          </article>
+          <article class="plan reveal" data-delay="3">
+            <h3>Год</h3>
+            <p class="plan__price">30 000 <small>₽</small></p>
+            <p class="plan__per">безлимит на 12 месяцев</p>
+            <ul>
+              <li>Всё из тарифа «3 месяца»</li>
+              <li>2 персональные тренировки в подарок</li>
+              <li>Заморозка 30 дней</li>
+            </ul>
+            <a class="btn btn--ghost" href="#contacts">Оформить</a>
+          </article>
+        </div>
+        <p class="pricing__note reveal">* Цены в макете примерные — актуальные уточняйте по телефону <a href="tel:+79520450908">+7 952 045 09 08</a></p>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section-p contacts" id="contacts">
+      <div class="container contacts__inner">
+        <div>
+          <h2 class="h2 reveal"><span class="red">Ждём тебя</span> в клубе</h2>
+          <ul class="contact-list">
+            <li class="reveal" data-delay="1">
+              <b>Адрес</b>
+              <a class="big" href="https://yandex.ru/maps/org/130258485023" target="_blank" rel="noopener">Казань, пр. Ильгама Шакирова, 2</a>
+            </li>
+            <li class="reveal" data-delay="2">
+              <b>Телефон</b>
+              <a class="big" href="tel:+79520450908">+7 952 045 09 08</a>
+            </li>
+            <li class="reveal" data-delay="3">
+              <b>Часы работы</b>
+              <span>Ежедневно, 08:00 – 22:00</span>
+            </li>
+          </ul>
+          <div class="socials reveal" data-delay="3">
+            <a href="https://telegram.me/red_fitness" target="_blank" rel="noopener">Telegram</a>
+            <a href="https://wa.me/79520450908" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://vk.ru/red_fitness_and_wellness" target="_blank" rel="noopener">ВКонтакте</a>
+          </div>
+        </div>
+        <form class="lead-form reveal" data-delay="2" id="leadForm" novalidate>
+          <div class="form-fields">
+            <h3>Оставить заявку</h3>
+            <p>Перезвоним, ответим на вопросы и подберём абонемент.</p>
+            <div class="field">
+              <label for="fName">Имя</label>
+              <input id="fName" name="name" type="text" placeholder="Как тебя зовут" required>
+            </div>
+            <div class="field">
+              <label for="fPhone">Телефон</label>
+              <input id="fPhone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <div class="field">
+              <label for="fTopic">Что интересует</label>
+              <select id="fTopic" name="topic">
+                <option>Тренажёрный зал</option>
+                <option>Групповые тренировки</option>
+                <option>Персональный тренинг</option>
+                <option>Спа и массаж</option>
+                <option>Просто экскурсия</option>
+              </select>
+            </div>
+            <button class="btn" type="submit">Отправить заявку</button>
+            <p class="form-note">Это демо-макет: форма никуда не отправляет данные.</p>
+          </div>
+          <div class="form-success">
+            <b>Заявка отправлена!</b>
+            <p>Мы перезвоним тебе в ближайшее время.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__about">
+          <a href="#top" class="logo">Rэd Fitness<small>&amp; wellness</small></a>
+          <p>Фитнес-клуб, оздоровительный центр и кофейня в одном камерном пространстве.</p>
+        </div>
+        <div>
+          <h4>Клуб</h4>
+          <a href="#about">О клубе</a>
+          <a href="#directions">Направления</a>
+          <a href="#team">Команда</a>
+        </div>
+        <div>
+          <h4>Посетителям</h4>
+          <a href="#pricing">Абонементы</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="https://yandex.ru/maps/org/130258485023" target="_blank" rel="noopener">Как доехать</a>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <a href="tel:+79520450908">+7 952 045 09 08</a>
+          <a href="https://telegram.me/red_fitness" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://vk.ru/red_fitness_and_wellness" target="_blank" rel="noopener">ВКонтакте</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> Rэd Fitness &amp; Wellness</span>
+        <span>Демо-макет: только фронтенд, без бэкенда</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
